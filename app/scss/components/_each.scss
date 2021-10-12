@@ -1,0 +1,25 @@
+.each{
+  padding: 60px 0 74px;
+  background-color: #ECD3BD;
+  &__title{
+    max-width: 357px;
+    font: 800 30px /35px $font;
+    margin-bottom: 30px;
+    &-logo{
+      color: $accent;
+    }
+  }
+}
+.each-items{
+  margin-bottom: 40px;
+  &__item{
+    flex:1;
+    &:nth-child(odd){
+      flex-direction: column-reverse;
+    }
+    &-text{
+      padding: 20px 0;
+      font: 600 20px/24px $font;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.colors{
+  padding: 30px 0;
+  background-color: $accent;
+  &__title{
+    font: 800 30px/36px $font;
+    max-width: 350px;
+    color: $white;
+    margin-bottom: 30px;
+  }
+  &-items{
+    &__item{
+      &:not(:last-child){
+        margin-right: 45px;
+      }
+      &-box{
+        width: 68px;
+        height: 68px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-bottom: 15px;
+      }
+      &-text{
+        color: $white;
+        font: 600 18px/21px $font;
+      }
+    }
+  }
+}

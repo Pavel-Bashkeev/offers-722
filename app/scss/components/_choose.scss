@@ -1,0 +1,68 @@
+.choose{
+  padding: 75px 0;
+  &__title{
+    max-width: 350px;
+    color: $black;
+    font: 800 30px/36px $font;
+    margin-bottom: 24px;
+    &-logo{
+      color: $accent;
+    }
+  }
+}
+.choose-items{
+  margin-bottom: 48px;
+  &__item{
+    &:not(:last-child){
+      margin-bottom: 40px;
+    }
+    &-box,&-inner{
+      grid-area: 1/1;
+    }
+    &-box{
+      width: 224px;
+      margin-right: auto;
+    }
+    &-inner{
+      box-shadow: 9px 9px 15px rgba(124, 124, 124, 0.25);
+      position: relative;
+      padding: 39px 0px 28px 45px;
+      width: 240px;
+      min-height: 264px;
+      display: flex;
+      position: relative;
+      margin-left: auto;
+      flex-direction: column;
+      justify-content: center;
+      background-color: #fff;
+      flex-shrink: 0;
+      &::before{
+        content: '';
+        display: block;
+        width: 28px;
+        height: 24px;
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        background-image: url('../images/dest/icons/check-second.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+      &::after{
+        content: '';
+        display: block;
+        width: 41px;
+        height: 2px;
+        background-color: $default;
+        margin-top: auto;
+      }
+    }
+    &-text{
+      font: 400 19px/25px $font;
+      color: $default;
+      word-wrap: break-word;
+      margin-top: auto;
+    }
+  }
+}

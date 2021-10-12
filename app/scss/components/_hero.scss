@@ -1,0 +1,164 @@
+.hero{
+  background-image: url('../images/dest/hero/hero-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: auto;
+  background-color: #EED7C5;
+  padding-bottom: 74px;
+  padding-top: 25px;
+  &__title{
+    font: 800 30px/36px $font;
+    margin-bottom: 15px;
+    max-width: 210px;
+  }
+  &__subtitle{
+    font: 400 16px/22px $font;
+    color: #131212;
+    margin-bottom: 35px;
+    max-width: 180px;
+  }
+}
+.hero-stick{
+  background-color: #276D2A;
+  border-radius: 50px;
+  padding: 5px 26px 8px 14px;
+  margin-bottom: 45px;
+  width: fit-content;
+  margin-left: -10px;
+  &__img{
+    width: 50px;
+    height: 50px;
+    margin-right: 3px;
+  }
+  &__text{
+    color: $white;
+    font: 400 18px / 24px $font;
+    max-width: 120px;
+  }
+}
+.hero-list{
+  padding-bottom: 20px;
+  padding-left: 10px;
+  &__item{
+    max-width: 245px;
+    &:not(:last-child){
+      margin-bottom: 20px;
+    }
+    &::before{
+      content: '';
+      width: 35px;
+      height: 30px;
+      background-image: url('../images/dest/icons/check.svg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      margin-right: 10px;
+      flex-shrink: 0;
+    }
+  }
+  &__text{
+    font: 400 18px / 24px $font;
+    color: $black;
+  }
+}
+.hero-price{
+  margin-bottom: 20px;
+  &__banner{
+    width: 100px;
+    height: 100px;
+    background-image: url(../images/dest/hero/hero-banner.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    right: 15%;
+    top: -60px;
+    &-text{
+      color: $white;
+      font:400 16px/18px $font;
+    }
+    &-discount{
+      color: $white;
+      font:600 35px/36px $font;
+    }
+  }
+  &__decor,&__inner{
+    grid-area: 1/2;
+  }
+  &__inner{
+    &::after{
+      content: '';
+      width: 16px;
+      height: 30px;
+      background-image: url(../images/dest/hero/arr-right.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      flex-shrink: 0;
+      order:1;
+      margin-right: 10px;
+    }
+  }
+  &__old{
+    margin-right: 10px;
+    &-text{
+      color: #838897;
+      font:400 16px/21px $font-second;
+    }
+    &-count{
+      color: #838897;
+    font: 400 40px/45px $font-second;
+    &::after{
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 4px;
+      border-radius: 4px;
+      background-color: #f21631;
+      left: 0;
+      top:50%;
+      transform: translateY(-50%);
+    }
+    }
+  }
+  &__current{
+    order:2;
+    &-text{
+      font:400 16px/21px $font-second;
+      color: $default;
+    }
+    &-count{
+      color: #F21631;
+      font: 700 50px/50px $font-second;
+    }
+  }
+}
+.timer{
+  padding: 0 15px;
+  margin-bottom: 35px;
+  &__text{
+    font:400 16px/17px $font;
+    margin-bottom: 10px;
+  }
+  &-count{
+    background-color:#F21631;
+    color: $white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 82px;
+    height: 57px;
+    font:600 50px/55px $font;
+    margin-bottom: 8px;
+    &__text{
+      font:400 16px/17px $font;
+    }
+  }
+  &-delimeter{
+    font: 600 57px/57px $font;
+    color: $default;
+    margin: -5px 5px 0;
+  }
+}
+.timer-second{
+  margin-bottom: 20px;
+}

@@ -1,0 +1,13 @@
+.fix{
+  padding: 75px 0;
+  &__title{
+    font: 800 30px/36px $font;
+    margin-bottom: 40px;
+    &-logo{
+      color: $accent;
+    }
+  }
+  &-video{
+    margin-bottom: 40px;
+  }
+}

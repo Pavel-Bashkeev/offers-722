@@ -1,0 +1,53 @@
+.happening{
+  padding: 75px 0;
+  &__title{
+    max-width: 357px;
+    margin-bottom: 30px;
+    font: 800 30px/35px $font;
+    &-logo{
+      color: $accent;
+    }
+  }
+}
+.happening-items{
+  padding: 0 15px;
+  &__item{
+    &-box,&-inner{
+      grid-area: 1/1;
+    }
+    &-box{
+     max-width: 224px;
+     margin-right: auto;
+    }
+    &-inner{
+      background-color: #fff;
+      box-shadow: 9px 9px 15px rgba(124, 124, 124, 0.25);
+      margin-left: auto;
+      width: 240px;
+      height: 217px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &::before{
+        content: '';
+        display: block;
+        width: 28px;
+        height: 24px;
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        background-image: url('../images/dest/icons/check-green.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+    }
+    &-text{
+      max-width: 150px;
+      font: 800 19px / 25px $font;
+    }
+    &:not(:last-child){
+      margin-bottom: 20px;
+    }
+  }
+}

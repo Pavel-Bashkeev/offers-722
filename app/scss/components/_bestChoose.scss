@@ -1,0 +1,31 @@
+.best-choose{
+  padding: 70px 0 100px;
+  background-color: #ECD3BD;
+  &__title{
+    font: 800 30px/36px $font;
+    margin-bottom: 45px;
+    &-logo{
+      color: $accent;
+    }
+  }
+  &__img{
+    margin-bottom: 50px;
+  }
+  &__info{
+    padding: 0 26px;
+    margin-bottom: 30px;
+    &-text{
+      font: 400 19px/26px $font;
+      &:not(:last-child){
+        margin-bottom: 25px;
+      }
+    }
+  }
+  &__accent{
+    border:10px solid $white;
+    padding: 25px 31px 28px 17px;
+    &-text{
+      font: 400 19px / 26px $font;
+    }
+  }
+}
