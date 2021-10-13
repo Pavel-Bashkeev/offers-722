@@ -71,3 +71,8 @@
   width: 18px;
   height: 18px;
 }
+@media (max-width: 375px) {
+  .slide {
+    max-width: 310px;
+}
+}

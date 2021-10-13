@@ -162,3 +162,20 @@
 .timer-second{
   margin-bottom: 20px;
 }
+@media (max-width: 414px) {
+  .hero-price__banner {
+    right: 3%;
+    top: -75px;
+}
+}
+@media (max-width: 359px) {
+  .hero-price__banner {
+    width: 90px;
+    height: 90px;
+  }
+}
+@media (max-width: 320px) {
+  .hero-list {
+    padding-left: 0px;
+}
+}

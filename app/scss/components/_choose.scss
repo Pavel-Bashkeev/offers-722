@@ -66,3 +66,14 @@
     }
   }
 }
+@media (max-width: 414px) {
+  .choose-items__item-inner {
+    padding: 39px 10px 28px 11px;
+    width: 200px;
+  }
+}
+@media (max-width: 390px) {
+  .choose-items__item-box {
+    width: 200px;
+}
+}
